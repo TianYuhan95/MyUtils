@@ -1,0 +1,12 @@
+		<!-- 用于展示SQL语句 -->
+        <dependency>
+            <groupId>p6spy</groupId>
+            <artifactId>p6spy</artifactId>
+            <version>2.1.4</version>
+        </dependency>
+        <!-- 阿里数据连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.10</version>
+        </dependency>
