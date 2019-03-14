@@ -10,6 +10,10 @@ spring:
     url: jdbc:p6spy:mysql:///springboot?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: Tian@543845
+#config MongoDB
+  data:
+    mogodb:
+      uri: mongodb://localhost:27017/
 #config druid
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 1
