@@ -14,6 +14,28 @@ spring:
   data:
     mogodb:
       uri: mongodb://localhost:27017/
+# config springdata(jpa)
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        ddl-auto: update
+        naming:
+          strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    database: MySQL
+    show-sql: true
+
+# config redis
+  redis:
+    database:
+    host: 127.0.0.1
+    port: 6379
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
 #config druid
     type: com.alibaba.druid.pool.DruidDataSource
     initialSize: 1
@@ -42,3 +64,9 @@ mybatis:
   # config server port
 server:
   port: 8888
+# config pagehelper
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params-count: count=countSql

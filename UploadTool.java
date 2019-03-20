@@ -28,13 +28,13 @@ public class UploadTool {
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd/HH/mm/ss");
         String dateStr = simpleDateFormat.format(date);
-        String filePath = "/"+dateStr;
+        String filePath = "/" + dateStr;
         System.out.println(filePath);
         File file = new File(filePath);
-        if(!file.exists()){
+        if (!file.exists()) {
             file.mkdirs();
         }
-        filePath += "/"+randomUUID+exet;
+        filePath += "/" + randomUUID + exet;
         multipartFile.transferTo(new File(filePath));
     }
 }
